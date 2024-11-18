@@ -1,3 +1,58 @@
+## Showcases
+### Famous people 
+
+<table class="center">
+  <tr>
+    <td style="text-align: center"><b>Albert Einstein</b></td>
+    <td style="text-align: center"><b>Marie Curie</b></td>
+    <td style="text-align: center"><b>Mona Lisa</b></td>
+  </tr>
+
+  <tr>
+    <td style="text-align: center"><img src="gifs/albert.gif"></a></td>
+    <td style="text-align: center"><img src="gifs/mary.gif"></a></td>
+    <td style="text-align: center"><img src="gifs/monalisa.gif"></a></td>
+  </tr>
+</table>
+
+### Subjects from SHV dataset
+#### Front Face video
+
+<table class="center">
+  <tr>
+    <td style="text-align: center"><b>Subject1</b></td>
+    <td style="text-align: center"><b>Subject2</b></td>
+    <td style="text-align: center"><b>Subject3</b></td>
+  </tr>
+  <tr>
+    <td style="text-align: center"><img src="gifs/sub2.gif"></a></td>
+    <td style="text-align: center"><img src="gifs/sub11.gif"></a></td>
+    <td style="text-align: center"><img src="gifs/sub12.gif"></a></td>
+  </tr>
+</table>
+
+#### Side Profile
+
+
+<table class="center">
+  <tr>
+    <td style="text-align: center"><b>Subject1</b></td>
+    <td style="text-align: center"><b>Subject2</b></td>
+    <td style="text-align: center"><b>Subject3</b></td>
+  </tr>
+  <tr>
+    <td style="text-align: center"><img src="gifs/sub7.gif"></a></td>
+    <td style="text-align: center"><img src="gifs/sub8.gif"></a></td>
+    <td style="text-align: center"><img src="gifs/sub9.gif"></a></td>
+  </tr>
+</table>
+
+### Different Art style
+
+#### Sketch
+
+
+
 ### Run Inference
 To run the test case of the proposed method, run the `scripts/inference.py`,  pass `source_image` and `driving_audio` as input:
 
@@ -30,3 +85,4 @@ options:
   --face_expand_ratio FACE_EXPAND_RATIO
                         face region
 ```
+
