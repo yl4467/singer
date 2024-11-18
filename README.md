@@ -1,5 +1,5 @@
 ## Showcases
-### Famous people 
+### Famous people singing "one day, we won't fight no more"
 
 <table class="center">
   <tr>
@@ -50,8 +50,46 @@
 ### Different Art style
 
 #### Sketch
+<table class="center">
+  <tr>
+    <td style="text-align: center"><b>Subject1</b></td>
+    <td style="text-align: center"><b>Subject2</b></td>
+    <td style="text-align: center"><b>Subject3</b></td>
+  </tr>
+  <tr>
+    <td style="text-align: center"><img src="gifs/sub13.gif"></a></td>
+    <td style="text-align: center"><img src="gifs/sub15.gif"></a></td>
+    <td style="text-align: center"><img src="gifs/sub22.gif"></a></td>
+  </tr>
+</table>
 
+#### Comic
+<table class="center">
+  <tr>
+    <td style="text-align: center"><b>Subject1</b></td>
+    <td style="text-align: center"><b>Subject2</b></td>
+    <td style="text-align: center"><b>Subject3</b></td>
+  </tr>
+  <tr>
+    <td style="text-align: center"><img src="gifs/sub19.gif"></a></td>
+    <td style="text-align: center"><img src="gifs/sub20.gif"></a></td>
+    <td style="text-align: center"><img src="gifs/sub21.gif"></a></td>
+  </tr>
+</table>
 
+#### Painting
+<table class="center">
+  <tr>
+    <td style="text-align: center"><b>Subject1</b></td>
+    <td style="text-align: center"><b>Subject2</b></td>
+    <td style="text-align: center"><b>Subject3</b></td>
+  </tr>
+  <tr>
+    <td style="text-align: center"><img src="gifs/sub16.gif"></a></td>
+    <td style="text-align: center"><img src="gifs/sub17.gif"></a></td>
+    <td style="text-align: center"><img src="gifs/sub18.gif"></a></td>
+  </tr>
+</table>
 
 ### Run Inference
 To run the test case of the proposed method, run the `scripts/inference.py`,  pass `source_image` and `driving_audio` as input:
