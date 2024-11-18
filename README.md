@@ -4,6 +4,7 @@ To run the test case of the proposed method, run the `scripts/inference.py`,  pa
 ```bash
 python scripts/inference_new.py --config configs/inference/inference.yaml --source_image examples/0001.jpg --driving_audio examples/0001.wav --output results/
 ```
+
 The generated videos will be saved in the `results` folder.
 
 For more options:
