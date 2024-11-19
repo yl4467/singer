@@ -146,8 +146,7 @@ The generated videos will be saved in the `results` folder.
 For more options:
 
 ```shell
-usage: inference.py [-h] [-c CONFIG] [--source_image SOURCE_IMAGE] [--driving_audio DRIVING_AUDIO] [--output OUTPUT] [--pose_weight POSE_WEIGHT]
-                    [--face_weight FACE_WEIGHT] [--lip_weight LIP_WEIGHT] [--face_expand_ratio FACE_EXPAND_RATIO]
+usage: inference.py [-h] [-c CONFIG] [--source_image SOURCE_IMAGE] [--driving_audio DRIVING_AUDIO] [--output OUTPUT]
 
 options:
   -h, --help            show this help message and exit
@@ -157,13 +156,5 @@ options:
   --driving_audio DRIVING_AUDIO
                         driving audio
   --output OUTPUT       output video file name
-  --pose_weight POSE_WEIGHT
-                        weight of pose
-  --face_weight FACE_WEIGHT
-                        weight of face
-  --lip_weight LIP_WEIGHT
-                        weight of lip
-  --face_expand_ratio FACE_EXPAND_RATIO
-                        face region
 ```
 
