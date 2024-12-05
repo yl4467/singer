@@ -3,7 +3,7 @@
 
 [![Project Website](https://img.shields.io/badge/Project-Website-Green)](https://yl4467.github.io/)
 [![arXiv](https://img.shields.io/badge/ArXiv-2312.02813-red)](https://arxiv.org/abs/2412.03430)
-[![HuggingFace](https://img.shields.io/badge/HuggingFace-Demo-yellow)](https://huggingface.co/yl2333/SINGER)
+[![HuggingFace](https://img.shields.io/badge/HuggingFace-Model-yellow)](https://huggingface.co/yl2333/SINGER)
 [![Code](https://img.shields.io/badge/Github-Code-blue)](https://huggingface.co/yl2333/SINGER)
 
 ## Framework 
@@ -49,6 +49,8 @@ Download our pretrained model from [HuggingFace](https://huggingface.co/yl2333/S
 |StableDiffusion V1.5|[https://huggingface.co/runwayml/stable-diffusion-v1-5](https://huggingface.co/runwayml/stable-diffusion-v1-5)|
 |wav2vec | [https://huggingface.co/facebook/wav2vec2-base-960h](https://huggingface.co/facebook/wav2vec2-base-960h)|
 
+DOwnload these models into the `./pretrained_model/` folder, otherwise you need to modify the model paths in the `config/inference/inference.yaml` to your own model downloaded paths.
+
 ### Prepare audios and reference images
 Prepare you own singing audios and the reference images and change the `--driving_audio` and `--source_image` into the right path. Make sure your singing audio is in the `.wav` format. You can also use our provided samples in `example` folder to test the perfromance.
 
@@ -85,5 +87,21 @@ options:
                         face region
 ```
 
-## Crediets
+### Run Train
+#### data prepare
+We follow the date processing process of [hallo](https://github.com/fudan-generative-vision/hallo).
+And download the required stage1 models from our [huggingface](https://huggingface.co/yl2333/SINGER) into the `/pretrained_models/` folder or modify the stage1 model path in the config file `config/train/train_revised.yaml`.
+Then run the following command to train the model:
+```
+CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch -m \
+  --config_file accelerate_config.yaml \
+  --machine_rank 0 \
+  --main_process_ip 0.0.0.0 \
+  --main_process_port 20056 \
+  --num_machines 1 \
+  --num_processes 4 \
+  scripts.train_revised --config ./configs/train/train_revised.yaml
+```
+
+## Credits
 Thanks to the [hallo](https://github.com/fudan-generative-vision/hallo), [WaveDiff](https://github.com/VinAIResearch/WaveDiff) and [FcaNet](https://github.com/cfzd/FcaNet) repositories,  for their open research and exploration.
