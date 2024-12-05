@@ -7,7 +7,7 @@
 [![Code](https://img.shields.io/badge/Github-Code-blue)](https://huggingface.co/yl2333/SINGER)
 
 ## Framework 
-The framework of the proposed method.
+The framework of the proposed method SINGER.
 ![framework](assets/framework_v3.png)
 
 ## Showcases
@@ -49,7 +49,7 @@ Download our pretrained model from [HuggingFace](https://huggingface.co/yl2333/S
 |StableDiffusion V1.5|[https://huggingface.co/runwayml/stable-diffusion-v1-5](https://huggingface.co/runwayml/stable-diffusion-v1-5)|
 |wav2vec | [https://huggingface.co/facebook/wav2vec2-base-960h](https://huggingface.co/facebook/wav2vec2-base-960h)|
 
-DOwnload these models into the `./pretrained_model/` folder, otherwise you need to modify the model paths in the `config/inference/inference.yaml` to your own model downloaded paths.
+Download these models into the `./pretrained_model/` folder, otherwise you need to modify the model paths in the `config/inference/inference.yaml` to your own model downloaded paths.
 
 ### Prepare audios and reference images
 Prepare you own singing audios and the reference images and change the `--driving_audio` and `--source_image` into the right path. Make sure your singing audio is in the `.wav` format. You can also use our provided samples in `example` folder to test the perfromance.
@@ -63,33 +63,11 @@ python scripts/inference_new.py --config configs/inference/inference.yaml --sour
 ```
 The generated videos will be saved in the `results` folder.
 
-For more options:
-
-```shell
-usage: inference.py [-h] [-c CONFIG] [--source_image SOURCE_IMAGE] [--driving_audio DRIVING_AUDIO] [--output OUTPUT] [--pose_weight POSE_WEIGHT]
-                    [--face_weight FACE_WEIGHT] [--lip_weight LIP_WEIGHT] [--face_expand_ratio FACE_EXPAND_RATIO]
-
-options:
-  -h, --help            show this help message and exit
-  -c CONFIG, --config CONFIG
-  --source_image SOURCE_IMAGE
-                        source image
-  --driving_audio DRIVING_AUDIO
-                        driving audio
-  --output OUTPUT       output video file name
-  --pose_weight POSE_WEIGHT
-                        weight of pose
-  --face_weight FACE_WEIGHT
-                        weight of face
-  --lip_weight LIP_WEIGHT
-                        weight of lip
-  --face_expand_ratio FACE_EXPAND_RATIO
-                        face region
-```
-
-### Run Train
+### Run Training
 #### data prepare
+
 We follow the data processing process of [hallo](https://github.com/fudan-generative-vision/hallo), after processing the data, put the generated json files into the `./data/` folder, or change the path `train_meta_paths` in the config file `config/train/train_revised.yaml`.
+
 #### Download the stage1 model
 And before training, you need to download the required stage1 models from our [huggingface](https://huggingface.co/yl2333/SINGER) into the `./pretrained_models/` folder or modify the stage1 model path `stage1_ckpt_dir` in the config file `config/train/train_revised.yaml`.
 
