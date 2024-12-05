@@ -35,7 +35,6 @@
 
 #### Side Profile
 
-
 <table class="center">
   <tr>
     <td style="text-align: center"><b>Subject1</b></td>
