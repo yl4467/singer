@@ -89,8 +89,11 @@ options:
 
 ### Run Train
 #### data prepare
-We follow the date processing process of [hallo](https://github.com/fudan-generative-vision/hallo).
-And download the required stage1 models from our [huggingface](https://huggingface.co/yl2333/SINGER) into the `/pretrained_models/` folder or modify the stage1 model path in the config file `config/train/train_revised.yaml`.
+We follow the data processing process of [hallo](https://github.com/fudan-generative-vision/hallo), after processing the data, put the generated json files into the `./data/` folder, or change the path `train_meta_paths` in the config file `config/train/train_revised.yaml`.
+#### Download the stage1 model
+And before training, you need to download the required stage1 models from our [huggingface](https://huggingface.co/yl2333/SINGER) into the `./pretrained_models/` folder or modify the stage1 model path `stage1_ckpt_dir` in the config file `config/train/train_revised.yaml`.
+
+#### Training
 Then run the following command to train the model:
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch -m \
@@ -101,6 +104,21 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 accelerate launch -m \
   --num_machines 1 \
   --num_processes 4 \
   scripts.train_revised --config ./configs/train/train_revised.yaml
+```
+
+## BibTex
+
+If you find this project useful, please cite our paper:
+```
+@misc{li2024singervividaudiodrivensinging, 
+    title={SINGER: Vivid Audio-driven Singing Video Generation with Multi-scale Spectral Diffusion Model}, 
+    author={Yan Li and Ziya Zhou and Zhiqiang Wang and Wei Xue and Wenhan Luo and Yike Guo}, 
+    year={2024}, 
+    eprint={2412.03430}, 
+    archivePrefix={arXiv}, 
+    primaryClass={cs.CV}, 
+    url={https://arxiv.org/abs/2412.03430}, 
+}
 ```
 
 ## Credits
