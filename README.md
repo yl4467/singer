@@ -11,20 +11,15 @@ The framework of the proposed method.
 ![framework](assets/framework_v3.png)
 
 ## Showcases
-<center>
-    <video width="320" height="240" controls>
-    <source src="assets/seeyouagain_001.mp4" type="video/mp4">
-  </video>
-  <video width="320" height="240" controls>
-    <source src="assets/seeyouagain_002.mp4" type="video/mp4">
-  </video>
-  <video width="320" height="240" controls>
-    <source src="assets/wseeyouagain_000.mp4" type="video/mp4">
-  </video>
-  <video width="320" height="240" controls>
-    <source src="assets/wseeyouagain_001.mp4" type="video/mp4">
-  </video>
-</center>
+<table class="center">
+  <tr>
+    <td style="text-align: center"><img src="assets/sy1.gif"></a></td>
+    <td style="text-align: center"><img src="assets/sy2.gif"></a></td>
+    <td style="text-align: center"><img src="assets/wsy1.gif"></a></td>
+    <td style="text-align: center"><img src="assets/wsy2.gif"></a></td>
+  </tr>
+</table>
+More showcases can be seen in our project website https://yl4467.github.io/ 
 
 ## Usage of SINGER
 ### Environment
