@@ -4,7 +4,7 @@ import torch.nn as nn
 from diffusers import ModelMixin
 import sys
 sys.path.append('..')
-from hallo_models.DWT_IDWT.DWT_IDWT_layer import DWT_2D, DWT_2D, IDWT_2D
+from models.DWT_IDWT.DWT_IDWT_layer import DWT_2D, DWT_2D, IDWT_2D
 def get_freq_indices(method):
     assert method in ['top1','top2','top4','top8','top16','top32',
                       'bot1','bot2','bot4','bot8','bot16','bot32',
