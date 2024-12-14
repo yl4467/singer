@@ -39,7 +39,7 @@ from safetensors.torch import load_file
 from .resnet import InflatedConv3d, InflatedGroupNorm
 from .unet_3d_blocks import (UNetMidBlock3DCrossAttn, get_down_block,
                              get_up_block)
-from hallo_models.DWT_IDWT.DWT_IDWT_layer import DWT_2D, IDWT_2D
+from models.DWT_IDWT.DWT_IDWT_layer import DWT_2D, IDWT_2D
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
 
 class hidden_spectral_weighting(nn.Module):
