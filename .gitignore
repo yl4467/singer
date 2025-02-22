@@ -1,7 +1,7 @@
-.pt
-.sh
-mlruns
-
-singer.egg-info
-gifs
-build
+*.pt
+*.sh
+mlruns/
+configs/test
+singer.egg-info/
+gifs/
+build/
