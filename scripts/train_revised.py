@@ -59,7 +59,7 @@ from models.models.face_locator import FaceLocator
 from models.models.image_proj import ImageProjModel
 from models.models.mutual_self_attention import ReferenceAttentionControl
 from models.models.unet_2d_condition import UNet2DConditionModel
-from models.models.unet_3d import UNet3DConditionModel
+from models.models.unet_3d_revised import UNet3DConditionModel
 from models.utils.util import (compute_snr, delete_additional_ckpt,
                               import_filename, init_output_dir,
                               load_checkpoint, save_checkpoint,
@@ -559,7 +559,7 @@ def train_stage2_process(cfg: argparse.Namespace) -> None:
     denoising_unet.requires_grad_(False)
     face_locator.requires_grad_(False)
     audioproj.requires_grad_(True)
-
+    
     # Set motion module learnable
     trainable_modules = cfg.trainable_para
     for name, module in denoising_unet.named_modules():
