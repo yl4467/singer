@@ -1,6 +1,131 @@
-## Showcases
-### Famous people singing "one day, we won't fight no more"
+<h1 align="center">Singing Head Generation</h1>
+<h2 align="center">Showcases</h2>
+<h3 align="center">Famous people singing "one day, we won't fight no more"</h3>
+<center>
+<h4>Cross-Subject Showcases</h4>
+</center>
+<center> 
+    <video width="220" height="240" controls>
+    <source src="video_samples_teaser_imgs/albert_11.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="video_samples_teaser_imgs/mary_11.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="video_samples_teaser_imgs/monalisa_11.mp4" type="video/mp4">
+  </video>
+    <video width="220" height="240" controls>
+    <source src="show_videos/oneday011.mp4" type="video/mp4">
+  </video>
+ 
+</center>
 
+<center><h4>Real-World Showcases</h4></center>
+<center> 
+    <video width="220" height="240" controls>
+    <source src="show_videos/26CImOX0-018-2.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/FK97PnmMjzo-029-2.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/89g9yMGFGlM-00-2.mp4" type="video/mp4">
+  </video>
+</center>
+<center>
+    <video width="220" height="240" controls>
+    <source src="show_videos/gRkIzo8tSlI-010-7.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/gUPz7J9QiE8-6.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/uTuMzurqMME-007-5.mp4" type="video/mp4">
+  </video>
+</center>
+
+<center><h4>Longer Video Generation</h4></center>
+<center>
+    <video width="220" height="240" controls>
+    <source src="show_videos/seeyouagain_001.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/seeyouagain_002.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/wseeyouagain_000.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/wseeyouagain_001.mp4" type="video/mp4">
+  </video>
+</center>
+<center><h4>Multiple Style Showcases</h4></center>
+
+<center><h5>Sketch Showcases</h5></center>
+<center>
+    <video width="220" height="240" controls>
+    <source src="show_videos/sketch1.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/sketch3.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/fCkeLBGSINs-072-1.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/2bCItaHq3JQ-008-2_linestyle.mp4" type="video/mp4">
+  </video>
+</center>
+
+<center><h5>Cartoon Showcases</h5></center>
+<center>
+    <video width="220" height="240" controls>
+    <source src="show_videos/commic3.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/commic2.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/commic1.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/2bCItaHq3JQ-008-2-cartoon.mp4" type="video/mp4">
+  </video>
+</center>
+
+<center><h5>Painting Showcases</h5></center>
+<center>
+    <video width="220" height="240" controls>
+    <source src="show_videos/paint4.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/paint5.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/paint3.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/EIkqaZBGKmE_03-1_paint.mp4" type="video/mp4">
+  </video>
+</center>
+
+<center><h5>Sculpture Showcases</h5></center>
+<center>
+    <video width="220" height="240" controls>
+    <source src="show_videos/2bCItaHq3JQ-051-2.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/2bCItaHq3JQ-051-3.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/EIkqaZBGKmE_03-1.mp4" type="video/mp4">
+  </video>
+  <video width="220" height="240" controls>
+    <source src="show_videos/89g9yMGFGlM-046-1.mp4" type="video/mp4">
+  </video>
+</center>
+
+<!--
 <table class="center">
   <tr>
     <td style="text-align: center"><b>Albert Einstein</b></td>
@@ -131,7 +256,7 @@
     <td style="text-align: center"><img src="gifs/sub31.gif"></a></td>
   </tr>
 </table>
-
+-->
 
 ### Run Inference
 To run the test case of the proposed method, run the `scripts/inference.py`,  pass `source_image` and `driving_audio` as input:

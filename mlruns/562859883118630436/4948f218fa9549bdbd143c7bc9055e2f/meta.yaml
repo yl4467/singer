@@ -1,0 +1,15 @@
+artifact_uri: file:///home/yanli/singer_source_code/mlruns/562859883118630436/4948f218fa9549bdbd143c7bc9055e2f/artifacts
+end_time: 1734119565340
+entry_point_name: ''
+experiment_id: '562859883118630436'
+lifecycle_stage: active
+run_id: 4948f218fa9549bdbd143c7bc9055e2f
+run_name: 20241214-0352
+run_uuid: 4948f218fa9549bdbd143c7bc9055e2f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734119539952
+status: 3
+tags: []
+user_id: yanli
