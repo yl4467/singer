@@ -5,3 +5,4 @@ configs/test
 singer.egg-info/
 gifs/
 build/
+scripts/__pycache__
